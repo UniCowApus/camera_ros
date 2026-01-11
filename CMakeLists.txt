@@ -96,6 +96,11 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}/
 )
 
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 if(BUILD_TESTING)
   set(ament_cmake_clang_format_CONFIG_FILE "${CMAKE_SOURCE_DIR}/.clang-format")
   set(ament_cmake_flake8_CONFIG_FILE "${CMAKE_SOURCE_DIR}/.flake8")
